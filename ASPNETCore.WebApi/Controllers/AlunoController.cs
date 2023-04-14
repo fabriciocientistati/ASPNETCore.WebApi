@@ -20,12 +20,14 @@ namespace ASPNETCore.WebApi.Controllers
             _IlunoRepository = alunoRepository;
         }
 
+        [Authorize]
         [HttpGet("selecionarTodos")]
         public async Task<ActionResult<IEnumerable<Tbaluno>>> GetAluno()
         {
             return Ok(await _IlunoRepository.SelectAll());
         }
 
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<ActionResult> SelectAluno(int id)
         {
