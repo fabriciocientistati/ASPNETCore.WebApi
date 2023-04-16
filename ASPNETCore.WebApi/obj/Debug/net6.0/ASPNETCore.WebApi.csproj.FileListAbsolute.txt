@@ -7,6 +7,7 @@ D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\bin\Debug\
 D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\bin\Debug\net6.0\ASPNETCore.WebApi.dll
 D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\bin\Debug\net6.0\ASPNETCore.WebApi.pdb
 D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\bin\Debug\net6.0\Humanizer.dll
+D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -16,6 +17,7 @@ D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\bin\Debug\
 D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
 D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
 D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
 D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
@@ -67,5 +69,3 @@ D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\obj\Debug\
 D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\obj\Debug\net6.0\ASPNETCore.WebApi.pdb
 D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\obj\Debug\net6.0\ASPNETCore.WebApi.genruntimeconfig.cache
 D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\obj\Debug\net6.0\ref\ASPNETCore.WebApi.dll
-D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll

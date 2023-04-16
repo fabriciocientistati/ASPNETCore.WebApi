@@ -16,7 +16,7 @@ namespace ASPNETCore.WebApi.Services
             {
                 Subject = new System.Security.Claims.ClaimsIdentity(new Claim[]
                 {
-                    new Claim("GedAluCod", aluno.AluEndBairroId.ToString()),
+                    new Claim("GedAluCod", aluno.GedAluCod.ToString()),
                 }),
                 Expires = DateTime.UtcNow.AddHours(3),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)

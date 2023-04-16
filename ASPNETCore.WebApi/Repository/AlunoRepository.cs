@@ -38,10 +38,9 @@ namespace ASPNETCore.WebApi.Repository
 
         public async Task<Tbaluno> SelectByPk(int id)
         {
-            var aluno = await _context.Tbaluno.Where(x => x.GedAluCod == id).FirstOrDefaultAsync();
-            return aluno;
+            return await _context.Tbaluno.Where(x => x.AluId == id).FirstOrDefaultAsync();
         }
-
+            
         public void Update(Tbaluno aluno)
         {
             _context.Entry(aluno).State = EntityState.Modified;

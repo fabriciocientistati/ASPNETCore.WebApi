@@ -36,6 +36,8 @@ namespace ASPNETCore.WebApi
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
 
+            services.AddScoped<IAlunoRepository, AlunoRepository>();
+
             services.AddControllers();
             //services.AddSwaggerGen(c =>
             //{
@@ -72,8 +74,6 @@ namespace ASPNETCore.WebApi
 
             });
 
-            services.AddScoped<IAlunoRepository, AlunoRepository>();
-
 
             var key = Encoding.ASCII.GetBytes(Key.Secret);
 
@@ -90,6 +90,7 @@ namespace ASPNETCore.WebApi
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(key),
                     ValidateIssuer = false,
+                    ValidateAudience = false,
                 };
             });
         }
@@ -105,6 +106,8 @@ namespace ASPNETCore.WebApi
             }
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

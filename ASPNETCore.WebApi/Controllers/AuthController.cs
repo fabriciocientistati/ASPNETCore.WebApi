@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ASPNETCore.WebApi.Controllers
 {
     [ApiController]
-    [Route("api/v1/auth")]
+    [Route("api/[controller]")]
     public class AuthController : Controller
     {
         [HttpPost]
