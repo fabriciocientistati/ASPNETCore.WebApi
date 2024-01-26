@@ -19,11 +19,19 @@ namespace ASPNETCore.WebApi.Repository
         public void Create(Tbaluno aluno)
         {
             _context.Tbaluno.Add(aluno);
+            _context.SaveChanges();
         }
 
-        public void Delete(Tbaluno aluno)
+        public void Delete(int id)
         {
-            _context.Tbaluno.Remove(aluno);
+            var alunoDelete = _context.Tbaluno.Find(id);
+
+            if (alunoDelete != null)
+            {
+                _context.Tbaluno.Remove(alunoDelete);
+                _context.SaveChanges();
+            }
+
         }
 
         public async Task<bool> SaveAllAsync()
@@ -40,10 +48,10 @@ namespace ASPNETCore.WebApi.Repository
         {
             return await _context.Tbaluno.Where(x => x.AluId == id).FirstOrDefaultAsync();
         }
-            
+
         public void Update(Tbaluno aluno)
         {
-            _context.Entry(aluno).State = EntityState.Modified;
+            _context.Update(aluno);
         }
     }
 }

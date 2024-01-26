@@ -11,13 +11,13 @@ namespace ASPNETCore.WebApi.Controllers
         [HttpPost]
         public IActionResult Auth(string username, string password) 
         {
-        if (username == "fabricio" && password == "123")
+        if (username == "api" && password == "2024")
             {
                 var token = TokenService.GenerateToken(new Models.Tbaluno());
                 return Ok(token);
             }
 
-            return BadRequest("username or password invalid");
+            return BadRequest("Usuario ou Senha invalida");
         }
     }
 }
