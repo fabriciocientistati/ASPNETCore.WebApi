@@ -50,17 +50,15 @@ namespace ASPNETCore.WebApi.Controllers
         }
 
         [Authorize]
-        [HttpPut("Atualizar Aluno")]
-        public async Task<IActionResult> Update(Tbaluno aluno)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id, [FromBody] Tbaluno aluno)
         {
-            var existeAluno = await _IlunoRepository.SelectByPk(aluno.AluId);
+            var existeAluno = await _IlunoRepository.SelectByPk(id);
 
             if (existeAluno == null)
                 return NotFound("Aluno não encontrado");
 
-            existeAluno.AluNom = aluno.AluNom;
-
-            _IlunoRepository.Update(existeAluno);
+                _IlunoRepository.Update(aluno);
 
             try
             {

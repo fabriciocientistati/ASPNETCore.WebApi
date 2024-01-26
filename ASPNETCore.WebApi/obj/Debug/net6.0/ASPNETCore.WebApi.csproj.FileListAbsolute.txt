@@ -69,3 +69,4 @@ D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\obj\Debug\
 D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\obj\Debug\net6.0\ASPNETCore.WebApi.pdb
 D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\obj\Debug\net6.0\ASPNETCore.WebApi.genruntimeconfig.cache
 D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\obj\Debug\net6.0\ref\ASPNETCore.WebApi.dll
+D:\Repository\fabriciocientistati\ASPNETCore.WebApi\ASPNETCore.WebApi\obj\Debug\net6.0\ASPNETCore.WebApi.sourcelink.json
