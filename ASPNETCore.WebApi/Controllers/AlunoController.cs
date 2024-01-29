@@ -2,6 +2,7 @@
 using ASPNETCore.WebApi.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -44,26 +45,30 @@ namespace ASPNETCore.WebApi.Controllers
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            
+
             _IlunoRepository.Create(aluno);
             return Ok(aluno);
         }
 
         [Authorize]
-        [HttpPut("{id}")]
+        [HttpPut("Atualizar Aluno")]
         public async Task<IActionResult> Update(int id, [FromBody] Tbaluno aluno)
         {
             var existeAluno = await _IlunoRepository.SelectByPk(id);
 
-            if (existeAluno == null)
+            if (existeAluno.AluId != id)
                 return NotFound("Aluno não encontrado");
 
-                _IlunoRepository.Update(aluno);
+                existeAluno.AluNom = aluno.AluNom;
+                existeAluno.AluCpf = aluno.AluCpf;
+                existeAluno.AluDtaNasc = aluno.AluDtaNasc;
+                existeAluno.AluAltEm = DateTime.Now;
 
             try
             {
+                _IlunoRepository.Update(aluno);
                 await _IlunoRepository.SaveAllAsync();
-                return Ok("Atualizado com sucesso");
+                    return Ok("Atualizado com sucesso");
             }
             catch
             {

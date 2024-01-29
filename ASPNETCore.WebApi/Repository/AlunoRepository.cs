@@ -1,6 +1,7 @@
 ﻿using ASPNETCore.WebApi.Interfaces;
 using ASPNETCore.WebApi.Models;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -49,9 +50,9 @@ namespace ASPNETCore.WebApi.Repository
             return await _context.Tbaluno.Where(x => x.AluId == id).FirstOrDefaultAsync();
         }
 
-        public void Update(Tbaluno aluno)
+        public void Update(Tbaluno updateAluno)
         {
-            _context.Update(aluno);
+            _context.Update(updateAluno);
         }
     }
 }
